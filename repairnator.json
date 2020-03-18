@@ -1,0 +1,142 @@
+{
+  "repository": {
+    "name": "Luki42/math-369",
+    "githubId": 246286926,
+    "url": "https://github.com/Luki42/math-369",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 661477057,
+      "url": "http://travis-ci.org/Luki42/math-369/builds/661477057",
+      "date": "Mar 12, 2020 11:56:18 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 11:36:04 AM",
+    "reproductionDateEnd": "Mar 18, 2020 11:37:53 AM",
+    "machineInfo": {
+      "hostName": "77320c5dd5d4",
+      "numberCPU": 8,
+      "freeMemory": 173448656,
+      "totalMemory": 204472320
+    },
+    "totalDuration": 106,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 38,
+        "stepNames": [
+          "CheckoutBuggyBuild",
+          "BuildProject"
+        ],
+        "stepDurations": [
+          0,
+          38
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProject"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 51,
+        "stepNames": [
+          "NPEFix"
+        ],
+        "stepDurations": [
+          51
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Luki42/math-369/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Luki42/math-369",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.math.analysis.solvers.BisectionSolverTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.math.analysis.solvers.BisectionSolverTest",
+        "testMethod": "testMath369",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 414,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 41082
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Luki42/math-369",
+      "branchName": "master",
+      "sha": "7ac6b5cf7d3b900d77c63d782125eebd5b2b5580",
+      "url": "http://github.com/Luki42/math-369/commit/7ac6b5cf7d3b900d77c63d782125eebd5b2b5580",
+      "date": "Mar 12, 2020 11:54:27 AM"
+    }
+  },
+  "type": "only_fail"
+}
